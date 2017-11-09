@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+  <head>
+    <meta charset="utf-8">
+    <title>Starwars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.min.js" charset="utf-8"></script>
+    <script src="index.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <img class="strooper" src="img/strooper.png" />
+    <div class="app-container" ng-controller="mainController">
+      <h1>Search Character</h1>
+      <form>
+        <input type="text" list="people" ng-model="personSelected" ng-click="clearText()" />
+        <datalist id="people">
+          <option ng-repeat="record in peopleList" value="{{record.name}}"></option>
+        </datalist>
+        <button type="button" name="button" ng-click="searchPeople()">Search</button>
+        <div class="clearfix"></div>
+      </form>
+      <div class="error"><h3>{{errorMessage}}</h3></div>
+      <div class="results hidden-{{hidden}}" >
+        <h3>Character details</h3>
+        <ul>
+          <li>Birth Year: {{age}}</li>
+          <li>Gender: {{gender}}</li>
+          <li>Hair Colour: {{haircolour}}</li>
+          <li>Eye Colour: {{eyecolour}}</li>
+          <li>Height: {{height}}</li>
+          <li>Weight: {{weight}}</li>
+        </ul>
+
+        <h3>Planet details</h3>
+        <ul>
+          <li>Name: {{planetName}}</li>
+          <li>Diameter: {{planetDiameter}}</li>
+          <li>Climate {{planetClimate}}</li>
+          <li>Gravity {{planetGravity}}</li>
+          <li>Population {{planetPopulation}}</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

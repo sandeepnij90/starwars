@@ -1,0 +1,16 @@
+{
+  "name": "star-wars",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "scripts": {
+    "build": "babel app.js > index.js"
+  },
+  "keywords": [],
+  "author": "Sandeep Nijjar",
+  "license": "ISC"
+}

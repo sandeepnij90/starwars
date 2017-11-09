@@ -1,0 +1,75 @@
+/* line 3, ../sass/index.scss */
+body,
+html {
+  background-color: #000000;
+  background-image: url("../img/stars.jpg");
+  background-size: cover;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* line 12, ../sass/index.scss */
+.clearfix {
+  clear: both;
+}
+
+/* line 16, ../sass/index.scss */
+.strooper {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  display: block;
+}
+
+/* line 24, ../sass/index.scss */
+.app-container {
+  width: 100%;
+  max-width: 480px;
+  position: relative;
+  margin: auto;
+  padding: 20px;
+  box-sizing: border-box;
+  color: white;
+  z-index: 2;
+}
+/* line 35, ../sass/index.scss */
+.app-container form input {
+  height: 30px;
+  width: 75%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 10px;
+  font-family: 'Source Sans Pro', sans-serif;
+  border-radius: 0;
+}
+/* line 45, ../sass/index.scss */
+.app-container form button {
+  border: 0;
+  height: 30px;
+  box-sizing: border-box;
+  width: 20%;
+  float: right;
+  background-color: #faed2b;
+  cursor: pointer;
+  transition: 0.4s;
+}
+/* line 55, ../sass/index.scss */
+.app-container form button:hover {
+  background-color: #bbaf04;
+  color: white;
+}
+/* line 63, ../sass/index.scss */
+.app-container .results.hidden-true {
+  display: none;
+}
+/* line 67, ../sass/index.scss */
+.app-container .results ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 71, ../sass/index.scss */
+.app-container .results ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid white;
+}

@@ -1,0 +1,77 @@
+$yellow: #faed2b;
+
+body,
+html {
+    background-color: #000000;
+    background-image: url("../img/stars.jpg");
+    background-size: cover;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.strooper {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    display: block;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    color: white;
+    z-index: 2;
+
+    form {
+        input {
+            height: 30px;
+            width: 75%;
+            box-sizing: border-box;
+            float: left;
+            padding-left: 10px;
+            font-family: 'Source Sans Pro', sans-serif;
+            border-radius: 0;
+        }
+
+        button {
+            border: 0;
+            height: 30px;
+            box-sizing: border-box;
+            width: 20%;
+            float: right;
+            background-color: $yellow;
+            cursor: pointer;
+            transition: 0.4s;
+
+            &:hover {
+                background-color: darken($yellow,20);
+                color: white;
+            }
+        }
+    }
+
+    .results {
+        &.hidden-true {
+            display: none;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+
+            li {
+                padding: 15px 0;
+                border-bottom: 1px solid white;
+            }
+        }
+    }
+}
